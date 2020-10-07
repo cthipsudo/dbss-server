@@ -1,3 +1,4 @@
+/* eslint-disable strict */
 require('dotenv').config();
 
 module.exports = {

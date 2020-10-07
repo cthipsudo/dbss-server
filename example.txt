@@ -1,5 +1,0 @@
-NODE_ENV=development
-PORT=8000
-DB_URL="postgresql://dunder_mifflin:apple@localhost/dbss"
-TEST_DB_URL="postgresql://dunder_mifflin:apple@localhost/dbss_test"
-JWT_SECRET="oscars-jwt-token-s"
