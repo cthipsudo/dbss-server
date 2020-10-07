@@ -15,7 +15,7 @@ VALUES
   ('dunder', '$2a$12$7/g92wWGobDhaKoFBCKALuVPm9bG7Sz89ZlSUOD./7AcquqTgJsCK'),
   ('park', '$2a$12$hDy90VKLeKG30CpTLqRffOUiydRzdt29CEuSzytO4l8ODfe7Zutvu'),
   ('recs', '$2a$12$UDSjEUvCXW.SdMBL1wx2Du10RAcBiZUZBFL7hmdfEUyzYPcxrNd5a'),
-  ('community', '$2a$12$szaYO.Vn2sIXzuZSSqJ0q.QU.Iii5r5lSYkEeD2QhK1ngKulJPA1y'),
+  ('midslotgone', '$2a$12$szaYO.Vn2sIXzuZSSqJ0q.QU.Iii5r5lSYkEeD2QhK1ngKulJPA1y'),
   ('brooklyn', '$2a$12$WuHLfqdQJ.61Ay1Q4yqdrOLaDHDU7l/pDjBby3q.kBVH1bpKSMGsa'),
   ('ninenine', '$2a$12$784WvwVBHrb39GMyJxM.Zebg1i8.tmrvUBZ.EALszMrsDFEs0L5EG');
 
@@ -51,7 +51,11 @@ VALUES
     (3, 1, 'poison', 2, 1),
     (3, 2, 'Pear', 1, 3),
     (3, 3, 'Cryie', 2, 3),
-    (1, 1, 'Sappy', 1, 3);
+    (1, 1, 'Sappy', 1, 3),
+    (4, 1, 'Slot One', 3, 3),
+    (4, 3, 'Slot Three', 2, 1),
+    (5, 2, 'Twoie', 2, 2),
+    (6, 3, 'Tree Guy', 1, 1);
 
 INSERT INTO
     dbss_questions ("linkedTo", question)
