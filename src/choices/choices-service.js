@@ -4,7 +4,7 @@ const ChoicesService = {
   getAllChoices(db) {
     return db
       .from('dbss_choices')
-      .select('linkedTo', 'choiceType', 'choice', 'score');
+      .select('*');
   },
 
   getById(db, id) {
@@ -15,3 +15,4 @@ const ChoicesService = {
 };
 
 module.exports = ChoicesService;
+
