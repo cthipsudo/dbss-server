@@ -6,6 +6,8 @@ const helmet = require('helmet');
 const { NODE_ENV } = require('./config');
 const choicesRouter = require('./choices/choices-router');
 const questionsRouter = require('./questions/questions-router');
+const characterSavesRouter = require('./character-saves/character-saves-router');
+const authRouter = require('./auth/auth-router');
 const app = express();
 
 const morganOption = (NODE_ENV === 'production')
@@ -18,6 +20,8 @@ app.use(cors());
 
 app.use('/api/choices', choicesRouter);
 app.use('/api/questions', questionsRouter);
+app.use('/api/char-save', characterSavesRouter);
+app.use('/api/auth', authRouter);
 
 
 app.use(function errorHandler(error, req, res, next) {

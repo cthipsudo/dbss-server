@@ -8,7 +8,9 @@ const ChoicesService = {
   },
 
   getById(db, id) {
-    return ChoicesService.getAllArticles(db)
+    return db
+      .from('dbss_choices')
+      .select('*')
       .where('choice.id', id)
       .first();
   },

@@ -6,10 +6,12 @@ const { requireAuth } = require('../middleware/jwt-auth');
 const CharacterSavesRouter = express.Router();
 
 CharacterSavesRouter
-    .route('/')
+    .route('/:playerid')
     .all(requireAuth)
     .get((req, res, next) => {
-        CharacterSavesService.getAllCharacterSaves(req.app.get('db'))
+        const playerId = req.params.playerid;
+
+        CharacterSavesService.getUsersSaves(req.app.get('db'), playerId)
             .then(CharacterSaves => {
                 //console.log(CharacterSaves);
                 res.json(CharacterSaves);

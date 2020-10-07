@@ -8,8 +8,10 @@ const QuestionsService = {
   },
 
   getById(db, id) {
-    return QuestionsService.getAllArticles(db)
-      .where('choice.id', id)
+    return db
+      .from('dbss_questions')
+      .select('*')
+      .where('question.id', id)
       .first();
   },
 };
