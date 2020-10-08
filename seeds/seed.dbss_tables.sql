@@ -22,7 +22,7 @@ VALUES
 --   ('dunder', 'apple'),
 --   ('park', 'banana'),
 --   ('recs', 'pear'),
---   ('community', 'orange'),
+--   ('midslotgone', 'orange'),
 --   ('brooklyn', 'watermelon'),
 --   ('ninenine', 'peach');
 
