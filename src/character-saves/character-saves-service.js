@@ -27,9 +27,24 @@ const CharacterSavesService = {
                 'dr.race_name'
             )
             .join('dbss_classes AS dc', 'dcs.char_class', '=', 'dc.id')
-            .join('dbss_races AS dr', 'dcs.char_race',  '=', 'dr.id')
+            .join('dbss_races AS dr', 'dcs.char_race', '=', 'dr.id')
             .where('dcs.user_id', userId);
     },
+    checkASave(db, pid, slotnum) {
+        return db('dbss_character_saves')
+            .where({
+                user_id: pid,
+                slot_num: slotnum
+            })
+    },
+    deleteCharSave(db, pid, slotnum) {
+        return db('dbss_character_saves')
+            .where({
+                user_id: pid,
+                slot_num: slotnum
+            })
+            .delete();
+    }
 };
 
 module.exports = CharacterSavesService;

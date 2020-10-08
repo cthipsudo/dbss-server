@@ -18,5 +18,21 @@ CharacterSavesRouter
             })
             .catch(next);
     });
+CharacterSavesRouter
+    .route('/:playerid/:slotnum')
+    .delete((req, res, next) => {
+        const { playerid, slotnum } = req.params;
+        //Check if that save exists
+        // CharacterSavesService.checkASave(req.app.get('db'), playerid, slotnum)
+        // .then(res => {
+        //     console.log(res);
+        // });
 
+        CharacterSavesService.deleteCharSave(req.app.get('db'), playerid, slotnum)
+            .then(() => {
+                res.status(204).end();
+            })
+            .catch(next);
+        //res.json({message: "trying to delete a char", playerId: playerid, slotnum: slotnum});
+    });
 module.exports = CharacterSavesRouter;
