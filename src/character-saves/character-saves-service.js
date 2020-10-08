@@ -8,6 +8,16 @@ const CharacterSavesService = {
 
     },
 
+    insertCharacterSave(db, newChar) {
+        return db
+            .insert(newChar)
+            .into('dbss_character_saves')
+            .returning('*')
+            .then(rows => {
+                return rows[0];
+            });
+    },
+
     getById(db, id) {
         return db
             .from('dbss_character_saves')
@@ -35,7 +45,8 @@ const CharacterSavesService = {
             .where({
                 user_id: pid,
                 slot_num: slotnum
-            });
+            })
+            .first();
     },
     deleteCharSave(db, pid, slotnum) {
         return db('dbss_character_saves')
