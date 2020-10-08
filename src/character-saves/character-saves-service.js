@@ -35,7 +35,7 @@ const CharacterSavesService = {
             .where({
                 user_id: pid,
                 slot_num: slotnum
-            })
+            });
     },
     deleteCharSave(db, pid, slotnum) {
         return db('dbss_character_saves')

@@ -20,6 +20,7 @@ CharacterSavesRouter
     });
 CharacterSavesRouter
     .route('/:playerid/:slotnum')
+    .all(requireAuth)
     .delete((req, res, next) => {
         const { playerid, slotnum } = req.params;
         //Check if that save exists
