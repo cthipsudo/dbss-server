@@ -3,7 +3,7 @@ CREATE TYPE responseAlignment as ENUM ('chaotic', 'neutral', 'lawful');
 
 CREATE TABLE dbss_choices (
   id SERIAL PRIMARY KEY,
-  "linkedTo" TEXT NOT NULL,
+  "linkedTo" TEXT REFERENCES dbss_questions(id),
   "choiceType" choiceLimit,
   choice TEXT NOT NULL,
   alignment responseAlignment NOT NULL,

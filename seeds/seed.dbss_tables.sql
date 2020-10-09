@@ -59,55 +59,185 @@ VALUES
     (6, 3, 'Tree Guy', 1, 1);
 
 INSERT INTO
-    dbss_questions ("linkedTo", question)
+    dbss_questions (id, "linkedTo", question)
 VALUES
-    ('a', '(Question A) FIXED first question: Who are you?');
+    ('a1','a', 'AI: Hello Captain, I am your Buddy On Board Briefing Yokemate, Bobby for short.\nThis is the first question to get you familiar with the game you’re playing, tell me Captain…Who are you?'),
+    ('b1','b', 'Example question b1'),
+    ('b2','b', 'Example question b2'),
+    ('c1','c', 'Example question c1');
 
 INSERT INTO
     dbss_choices (
-        "linkedTo", "choiceType", score, health_lost,
+        "linkedTo", "choiceType", score, health_lost, alignment,
         choice
     )
 VALUES
     (
-        'a','goblin', 50, 0,
-        'Hi I''m a goblin'
+        'a1','goblin', 50, 0, 'chaotic',
+        '*recites your name in gobish*'
     ),
     (
-        'a', 'alien', 50, 0,
-        'Hi I''m a alien'
+        'a1', 'alien', 50, 0, 'neutral',
+        '*Gurgles* I’m an alien!'
         
     ),
     (
-        'a', 'human', 50, 0,
-        'Hi I''m a human'
+        'a1', 'human', 50, 0, 'lawful',
+        'Hello There! Just an average human.'
     ),
     (
-        'a', 'space_wizard', 50, 0,
-        'An elegant wizard at your service'
+        'a1', 'space_wizard', 50, 0, 'lawful',
+        '*bows* An elegant wizard at your service.'
     ),
     (
-        'a', 'astral_thief', 50, 0,
-        'Thief extraordinaire'
+        'a1', 'astral_thief', 50, 0, 'neutral',
+        '*scoffs* Ha, Thief Extraordinaire...'
         
     ),
     (
-        'a', 'cosmic_warrior', 50, 0,
-        'Gwarh! Strong Warrior I am!'
+        'a1', 'cosmic_warrior', 50, 0, 'chaotic',
+        'GWARH! STRONG WARRIOR AM I!'
     ),
     (
-        'a', 'default', 25, 0,
-        'Default Choice 3 from question A'
+        'a1', 'default', 25, 0, 'neutral',
+        'Hey there, just a pilot.'
     ),
     (
-        'a', 'default', 25, 0,
-        'Default Choice 4 from question A'
+        'a1', 'default', 25, 0, 'neutral',
+        'That’s none of your business who I am to you.'
+    ),
+    (
+        'b1', 'goblin', 25, 0, 'chaotic',
+        'Goblin Response'
+    ),
+
+    (
+        'b1', 'alien', 25, 0, 'neutral',
+        'Alien Response'
+    ),
+
+    (
+        'b1', 'human', 25, 0, 'lawful',
+        'Human Response'
+    ),
+    (
+        'b1', 'space_wizard', 25, 0, 'lawful',
+        'Wizard Response'
+    ),
+
+    (
+        'b1', 'astral_thief', 25, 0, 'neutral',
+        'Thief Response'
+    ),
+
+    (
+        'b1', 'cosmic_warrior', 25, 0, 'chaotic',
+        'warrior response'
+    ),
+
+    (
+        'b1', 'default', 25, 0, 'neutral',
+        'default response 3'
+    ),
+
+    (
+        'b1', 'default', 25, 0, 'lawful',
+        'default response 4'
+    ),
+
+    (
+        'b2', 'goblin', 25, 0, 'chaotic',
+        'Goblin Response'
+    ),
+
+    (
+        'b2', 'alien', 25, 0, 'neutral',
+        'Alien Response'
+    ),
+
+    (
+        'b2', 'human', 25, 0, 'lawful',
+        'Human Response'
+    ),
+    (
+        'b2', 'space_wizard', 25, 0, 'lawful',
+        'Wizard Response'
+    ),
+
+    (
+        'b2', 'astral_thief', 25, 0, 'neutral',
+        'Thief Response'
+    ),
+
+    (
+        'b2', 'cosmic_warrior', 25, 0, 'chaotic',
+        'warrior response'
+    ),
+
+    (
+        'b2', 'default', 25, 0, 'neutral',
+        'default response 3'
+    ),
+
+    (
+        'b2', 'default', 25, 0, 'lawful',
+        'default response 4'
+    ),
+
+    (
+        'c1', 'goblin', 25, 0, 'chaotic',
+        'Goblin Response'
+    ),
+
+    (
+        'c1', 'alien', 25, 0, 'neutral',
+        'Alien Response'
+    ),
+
+    (
+        'c1', 'human', 25, 0, 'lawful',
+        'Human Response'
+    ),
+    (
+        'c1', 'space_wizard', 25, 0, 'lawful',
+        'Wizard Response'
+    ),
+
+    (
+        'c1', 'astral_thief', 25, 0, 'neutral',
+        'Thief Response'
+    ),
+
+    (
+        'c1', 'cosmic_warrior', 25, 0, 'chaotic',
+        'warrior response'
+    ),
+
+    (
+        'c1', 'default', 25, 0, 'neutral',
+        'default response 3'
+    ),
+
+    (
+        'c1', 'default', 25, 0, 'lawful',
+        'default response 4'
     );
 
 INSERT INTO
     dbss_responses ("linkedTo", alignment, response, game_ending)
 VALUES
-    ('a', 'neutral', 'Looks like you''re set Captain, welcome aboard!', false);
+    ('a1', 'chaotic', 'Interesting..uh...response Captain. Good to meet you, looks like you’re ready to start.\nPlease don’t break anything.', false),
+    ('a1', 'neutral', 'Nice to meet you Captain, you seem capable of handling a ship.\nLet’s start once you’re ready.', false),
+    ('a1', 'lawful', 'A pleasure to meet you Captain. Refreshing to meet someone with your caliber.\nI’m ready to begin this journey with you.', false),
+    ('b1', 'chaotic', 'b1 chaotic response here', false),
+    ('b1', 'neutral', 'b1 neutral response here', false),
+    ('b1', 'lawful', 'b1 lawful response here', false),
+    ('b2', 'chaotic', 'b2 chaotic response here', false),
+    ('b2', 'neutral', 'b2 neutral response here', false),
+    ('b2', 'lawful', 'b2 lawful response here', false),
+    ('c1', 'chaotic', 'c1 chaotic response here', false),
+    ('c1', 'neutral', 'c1 neutral response here', false),
+    ('c1', 'lawful', 'c1 lawful response here', false);
 
 COMMIT;
 
