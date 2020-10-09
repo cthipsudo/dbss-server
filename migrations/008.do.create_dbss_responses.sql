@@ -1,4 +1,4 @@
-CREATE TYPE responseAlignment as ENUM ('chaotic', 'neutral', 'lawful');
+
 
 CREATE TABLE dbss_responses (
   id SERIAL PRIMARY KEY,
