@@ -24,7 +24,7 @@ CharacterSavesRouter
     .route('/:playerid/:slotnum')
     .all(requireAuth)
     .post(jsonParser, (req, res, next) => {
-        const slot_num = req.params.slotnum;
+        const slot_num = req.params.slotnum.split('-')[1];
         const user_id = req.params.playerid;
         const { char_name, char_class, char_race } = req.body;
         const newCharSave = { user_id, slot_num, char_name, char_class, char_race };
