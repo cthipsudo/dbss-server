@@ -61,7 +61,7 @@ VALUES
 INSERT INTO
     dbss_questions (id, "linkedTo", question)
 VALUES
-    ('a1','a', 'AI: Hello Captain, I am your Buddy On Board Briefing Yokemate, B.O.B.B.Y. for short.\n\nThis is the first question to get you familiar with the game you''re playing, tell me Captain.\n\n\nWho are you?'),
+    ('a1','a', 'Hello Captain, I am your Buddy On Board Briefing Yokemate, B.O.B.B.Y. for short.\n\nThis is the first question to get you familiar with the game you''re playing, tell me Captain.\n\n\nWho are you?'),
     ('b1','b', 'Example question b1'),
     ('b2','b', 'Example question b2'),
     ('c1','c', 'Example question c1');
@@ -235,7 +235,7 @@ VALUES
     ('b2', 'chaotic', 'b2 chaotic response here', false),
     ('b2', 'neutral', 'b2 neutral response here', false),
     ('b2', 'lawful', 'b2 lawful response here', false),
-    ('c1', 'chaotic', 'c1 chaotic response here', false),
+    ('c1', 'chaotic', 'c1 chaotic response here', true),
     ('c1', 'neutral', 'c1 neutral response here', false),
     ('c1', 'lawful', 'c1 lawful response here', false);
 
