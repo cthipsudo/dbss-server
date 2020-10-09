@@ -226,8 +226,8 @@ VALUES
 INSERT INTO
     dbss_responses ("linkedTo", alignment, response, game_ending)
 VALUES
-    ('a1', 'chaotic', 'Interesting..uh...response Captain. Good to meet you, looks like you’re ready to start.\n\nPlease don’t break anything.', false),
-    ('a1', 'neutral', 'Nice to meet you Captain, you seem capable of handling a ship.\n\nLet’s start once you’re ready.', false),
+    ('a1', 'chaotic', 'Interesting..uh...response Captain. Good to meet you, looks like you''re ready to start.\n\nPlease don''t break anything.', false),
+    ('a1', 'neutral', 'Nice to meet you Captain, you seem capable of handling a ship.\n\nLet''s start once you''re ready.', false),
     ('a1', 'lawful', 'A pleasure to meet you Captain. Refreshing to meet someone with your caliber.\n\nI''m ready to begin this journey with you.', false),
     ('b1', 'chaotic', 'b1 chaotic response here', false),
     ('b1', 'neutral', 'b1 neutral response here', false),
