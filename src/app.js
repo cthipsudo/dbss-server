@@ -7,8 +7,9 @@ const { NODE_ENV } = require('./config');
 const choicesRouter = require('./choices/choices-router');
 const questionsRouter = require('./questions/questions-router');
 const characterSavesRouter = require('./character-saves/character-saves-router');
-const ResponsesRouter = require('./responses/responses-router');
+const responsesRouter = require('./responses/responses-router');
 const authRouter = require('./auth/auth-router');
+const scorboardRouter = require('./scoreboard/scoreboard-router');
 const app = express();
 
 const morganOption = (NODE_ENV === 'production')
@@ -23,7 +24,8 @@ app.use('/api/choices', choicesRouter);
 app.use('/api/questions', questionsRouter);
 app.use('/api/char-save', characterSavesRouter);
 app.use('/api/auth', authRouter);
-app.use('/api/responses', ResponsesRouter);
+app.use('/api/responses', responsesRouter);
+app.use('/api/scoreboard', scorboardRouter);
 
 app.use(function errorHandler(error, req, res, next) {
   let response;
