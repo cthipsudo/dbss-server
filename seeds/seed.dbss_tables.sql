@@ -6,7 +6,8 @@ dbss_classes,
 dbss_races,
 dbss_scoreboard,
 dbss_questions,
-dbss_choices
+dbss_choices,
+dbss_responses
 RESTART IDENTITY CASCADE;
 
 INSERT INTO 
@@ -64,59 +65,49 @@ VALUES
 
 INSERT INTO
     dbss_choices (
-        "linkedTo",
-        "choiceType",
-        choice,
-        score
+        "linkedTo", "choiceType", score, health_lost,
+        choice
     )
 VALUES
     (
-        1,
-        'goblin',
-        'Hi I''m a goblin',
-        50
+        'a','goblin', 50, 0,
+        'Hi I''m a goblin'
     ),
     (
-        1,
-        'alien',
-        'Hi I''m a alien',
-        50
+        'a', 'alien', 50, 0,
+        'Hi I''m a alien'
+        
     ),
     (
-        1,
-        'human',
-        'Hi I''m a human',
-        50
+        'a', 'human', 50, 0,
+        'Hi I''m a human'
     ),
     (
-        1,
-        'space_wizard',
-        'An elegant wizard at your service',
-        50
+        'a', 'space_wizard', 50, 0,
+        'An elegant wizard at your service'
     ),
     (
-        1,
-        'astral_thief',
-        'Thief extraordinaire',
-        50
+        'a', 'astral_thief', 50, 0,
+        'Thief extraordinaire'
+        
     ),
     (
-        1,
-        'cosmic_warrior',
-        'Gwarh! Strong Warrior I am!',
-        50
+        'a', 'cosmic_warrior', 50, 0,
+        'Gwarh! Strong Warrior I am!'
     ),
     (
-        1,
-        'default',
-        'Default Choice 3 from question A',
-        25
+        'a', 'default', 25, 0,
+        'Default Choice 3 from question A'
     ),
     (
-        1,
-        'default',
-        'Default Choice 4 from question A',
-        25
+        'a', 'default', 25, 0,
+        'Default Choice 4 from question A'
     );
 
+INSERT INTO
+    dbss_responses ("linkedTo", alignment, response, game_ending)
+VALUES
+    ('a', 'neutral', 'Looks like you''re set Captain, welcome aboard!', false);
+
 COMMIT;
+

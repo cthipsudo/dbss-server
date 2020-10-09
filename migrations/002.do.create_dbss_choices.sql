@@ -2,9 +2,10 @@ CREATE TYPE choiceLimit as ENUM ('goblin', 'alien', 'human', 'space_wizard', 'as
 
 CREATE TABLE dbss_choices (
   id SERIAL PRIMARY KEY,
-  "linkedTo" INTEGER REFERENCES dbss_questions(id),
+  "linkedTo" TEXT NOT NULL,
   "choiceType" choiceLimit,
   choice TEXT NOT NULL,
-  score int
+  score int NOT NULL,
+  health_lost int NOT NULL
 );
 
