@@ -15,7 +15,6 @@ CharacterSavesRouter
 
         CharacterSavesService.getUsersSaves(req.app.get('db'), playerId)
             .then(CharacterSaves => {
-                //console.log(CharacterSaves);
                 res.json(CharacterSaves);
             })
             .catch(next);

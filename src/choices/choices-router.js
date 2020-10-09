@@ -10,7 +10,6 @@ ChoicesRouter
     .get((req, res, next) => {
         ChoicesService.getAllChoices(req.app.get('db'))
             .then(Choices => {
-                //console.log(Choices);
                 res.json(Choices);
             })
             .catch(next);

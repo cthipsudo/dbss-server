@@ -10,7 +10,6 @@ QuestionsRouter
     .get((req, res, next) => {
         QuestionsService.getAllQuestions(req.app.get('db'))
             .then(Questions => {
-                //console.log(Questions);
                 res.json(Questions);
             })
             .catch(next);

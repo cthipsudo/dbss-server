@@ -10,7 +10,6 @@ ResponsesRouter
     .get((req, res, next) => {
         ResponsesService.getAllResponses(req.app.get('db'))
             .then(Responses => {
-                //console.log(Responses);
                 res.json(Responses);
             })
             .catch(next);

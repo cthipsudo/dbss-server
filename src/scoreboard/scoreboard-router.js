@@ -13,11 +13,6 @@ ScoreboardRouter
     .get((req, res, next) => {
         ScoreboardService.getAllScores(req.app.get('db'))
             .then(scoreboard => {
-                // console.log(scoreboard);
-                // if(scoreboard.length === 0){
-                //     return res.status(404).json({message: 'No scores :('});
-                // }
-                //console.log(Scorboard);
                 return res.json(scoreboard);
             })
             .catch(next);
