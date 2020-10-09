@@ -38,5 +38,14 @@ ScoreboardRouter
             })
             .catch(next);
     });
+ScoreboardRouter
+    .route('/recent')
+    .get((req, res, next) => {
+        ScoreboardService.getAllRecentScores(req.app.get('db'))
+            .then(scoreboard => {
+                return res.json(scoreboard);
+            })
+            .catch(next);
+    });
 
 module.exports = ScoreboardRouter;

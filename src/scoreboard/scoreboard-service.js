@@ -5,8 +5,17 @@ const ScoreboardService = {
         return db
             .from('dbss_scoreboard')
             .select('*')
-            .orderBy('score', 'desc');
+            .orderBy('score', 'desc')
+            .limit(10);
 
+    },
+
+    getAllRecentScores(db) {
+        return db
+            .from('dbss_scoreboard')
+            .select('*')
+            .orderBy('date_created', 'desc')
+            .limit(10);
     },
 
     insertNewScore(db, newScore) {
