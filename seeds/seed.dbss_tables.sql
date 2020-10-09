@@ -61,7 +61,7 @@ VALUES
 INSERT INTO
     dbss_questions (id, "linkedTo", question)
 VALUES
-    ('a1','a', 'AI: Hello Captain, I am your Buddy On Board Briefing Yokemate, Bobby for short.\nThis is the first question to get you familiar with the game you’re playing, tell me Captain…Who are you?'),
+    ('a1','a', 'AI: Hello Captain, I am your Buddy On Board Briefing Yokemate, B.O.B.B.Y. for short.\n\nThis is the first question to get you familiar with the game you''re playing, tell me Captain.\n\n\nWho are you?'),
     ('b1','b', 'Example question b1'),
     ('b2','b', 'Example question b2'),
     ('c1','c', 'Example question c1');
@@ -78,7 +78,7 @@ VALUES
     ),
     (
         'a1', 'alien', 50, 0, 'neutral',
-        '*Gurgles* I’m an alien!'
+        '*Gurgles* I''m an alien!'
         
     ),
     (
@@ -104,7 +104,7 @@ VALUES
     ),
     (
         'a1', 'default', 25, 0, 'neutral',
-        'That’s none of your business who I am to you.'
+        'That''s none of your business who I am to you.'
     ),
     (
         'b1', 'goblin', 25, 0, 'chaotic',
@@ -226,9 +226,9 @@ VALUES
 INSERT INTO
     dbss_responses ("linkedTo", alignment, response, game_ending)
 VALUES
-    ('a1', 'chaotic', 'Interesting..uh...response Captain. Good to meet you, looks like you’re ready to start.\nPlease don’t break anything.', false),
-    ('a1', 'neutral', 'Nice to meet you Captain, you seem capable of handling a ship.\nLet’s start once you’re ready.', false),
-    ('a1', 'lawful', 'A pleasure to meet you Captain. Refreshing to meet someone with your caliber.\nI’m ready to begin this journey with you.', false),
+    ('a1', 'chaotic', 'Interesting..uh...response Captain. Good to meet you, looks like you’re ready to start.\n\nPlease don’t break anything.', false),
+    ('a1', 'neutral', 'Nice to meet you Captain, you seem capable of handling a ship.\n\nLet’s start once you’re ready.', false),
+    ('a1', 'lawful', 'A pleasure to meet you Captain. Refreshing to meet someone with your caliber.\n\nI''m ready to begin this journey with you.', false),
     ('b1', 'chaotic', 'b1 chaotic response here', false),
     ('b1', 'neutral', 'b1 neutral response here', false),
     ('b1', 'lawful', 'b1 lawful response here', false),
