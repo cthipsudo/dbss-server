@@ -4,7 +4,8 @@ const ScoreboardService = {
     getAllScores(db) {
         return db
             .from('dbss_scoreboard')
-            .select('*');
+            .select('*')
+            .orderBy('score', 'desc');
 
     },
 
