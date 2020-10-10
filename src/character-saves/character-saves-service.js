@@ -1,4 +1,5 @@
 /* eslint-disable strict, indent */
+const xss = require('xss');
 
 const CharacterSavesService = {
     getAllCharacterSaves(db) {
@@ -8,7 +9,7 @@ const CharacterSavesService = {
 
     },
 
-    insertCharacterSave(db, newChar) {
+    insertCharSave(db, newChar) {
         return db
             .insert(newChar)
             .into('dbss_character_saves')
@@ -55,7 +56,23 @@ const CharacterSavesService = {
                 slot_num: slotnum
             })
             .delete();
-    }
+    },
+    updateCharSave(knex, id, newArticleFields) {
+        return knex('dbss_character_saves')
+            .where({ id })
+            .update(newArticleFields);
+    },
+
+    serializeCharacter(char) {
+        const { user_id, slot_num, char_name, char_class, char_race } = char;
+        return { 
+            user_id, 
+            slot_num, 
+            char_name: xss(char_name), 
+            char_class, 
+            char_race 
+        };
+    },
 };
 
 module.exports = CharacterSavesService;
