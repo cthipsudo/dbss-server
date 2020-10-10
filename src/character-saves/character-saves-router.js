@@ -67,13 +67,11 @@ CharacterSavesRouter
             .then(save => {
                 if(!save) return res.status(400).json({ error: `No existing save here, can't update`, });
                 const cleanChar = CharacterSavesService.serializeCharacter(newCharSave);
-                console.log(save);
                 return CharacterSavesService.updateCharSave(req.app.get('db'), save.id, cleanChar)
                     .then( charSave =>{
                         res
                             .status(200)
-                            .location(path.posix.join(req.originalUrl, `/${charSave.id}`))
-                            .json(charSave);
+                            .json({message: 'char updated'});
                     })
                     .catch(next);
             } );
