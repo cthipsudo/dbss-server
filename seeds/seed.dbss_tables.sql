@@ -61,7 +61,7 @@ VALUES
 INSERT INTO
     dbss_questions (id, "linkedTo", question)
 VALUES
-    ('a1','a', 'Hello Captain, I am your Buddy On Board Briefing Yokemate, B.O.B.B.Y. for short.\n\nThis is the first question to get you familiar with the game you''re playing, tell me Captain.\n\n\nWho are you?'),
+    ('a1','a', 'Hello Captain, I am your Buddy On Board Briefing Yokemate,\nB.O.B.B.Y. for short.\n\nThis is the first question to get you familiar with the game you''re playing, tell me Captain.\n\n\nWho are you?'),
     ('b1','b', 'Example question b1'),
     ('b2','b', 'Example question b2'),
     ('c1','c', 'Example question c1');
