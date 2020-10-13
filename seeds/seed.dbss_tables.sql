@@ -81,379 +81,379 @@ INSERT INTO
     )
 VALUES
     (
-        'a1','goblin', 250, 0, 'chaotic',
+        'a1','goblin', 2500, 0, 'chaotic',
         '*recites your name in gobish*'
     ),
     (
-        'a1', 'alien', 250, 0, 'neutral',
+        'a1', 'alien', 2500, 0, 'neutral',
         '*Gurgles* "I''m an alien!"'
         
     ),
     (
-        'a1', 'human', 250, 0, 'lawful',
+        'a1', 'human', 2500, 0, 'lawful',
         '"Hello There! Just an average human."'
     ),
     (
-        'a1', 'space_wizard', 150, 0, 'lawful',
+        'a1', 'space_wizard', 1250, 0, 'lawful',
         '*bows* "An elegant wizard at your service."'
     ),
     (
-        'a1', 'astral_thief', 150, 0, 'neutral',
+        'a1', 'astral_thief', 1250, 0, 'neutral',
         '*scoffs* "Ha, Thief Extraordinaire..."'
         
     ),
     (
-        'a1', 'cosmic_warrior', 150, 0, 'chaotic',
+        'a1', 'cosmic_warrior', 1250, 0, 'chaotic',
         '"GWARH! STRONG WARRIOR AM I!"'
     ),
     (
-        'a1', 'default', 100, 0, 'neutral',
+        'a1', 'default', 1000, 0, 'neutral',
         '"Hey there, just a pilot."'
     ),
     (
-        'a1', 'default', 100, 0, 'neutral',
+        'a1', 'default', 1000, 0, 'neutral',
         '"That''s none of your business who I am to you."'
     ),
     (
-        'b1', 'goblin', 250, 0, 'chaotic',
+        'b1', 'goblin', 2500, 0, 'chaotic',
         'Growl at the Manuels'
     ),
 
     (
-        'b1', 'alien', 250, 0, 'lawful',
+        'b1', 'alien', 2500, 0, 'lawful',
         'Run an analysis in your head.'
     ),
 
     (
-        'b1', 'human', 250, 0, 'neutral',
+        'b1', 'human', 2500, 0, 'neutral',
         'Take a moment to think.'
     ),
     (
-        'b1', 'space_wizard', 150, 0, 'lawful',
+        'b1', 'space_wizard', 1250, 0, 'lawful',
         'Cast a spell to analyze the ship.'
     ),
 
     (
-        'b1', 'astral_thief', 150, 0, 'neutral',
+        'b1', 'astral_thief', 1250, 0, 'neutral',
         'Consult the stars'
     ),
 
     (
-        'b1', 'cosmic_warrior', 150, 0, 'chaotic',
+        'b1', 'cosmic_warrior', 1250, 0, 'chaotic',
         '“WHAT MANUEL?”'
     ),
 
     (
-        'b1', 'default', 100, 0, 'lawful',
+        'b1', 'default', 1000, 0, 'lawful',
         'Run an analysis on the ship.'
     ),
 
     (
-        'b1', 'default', 100, 0, 'chaotic',
+        'b1', 'default', 1000, 0, 'chaotic',
         '“Wait did you mean manuals not Manuels?”'
     ),
     (
-        'b2', 'goblin', 250, 0, 'chaotic',
+        'b2', 'goblin', 2500, 0, 'chaotic',
         'Play your Gwar Gwar drums'
     ),
 
     (
-        'b2', 'alien', 250, 0, 'neutral',
+        'b2', 'alien', 2500, 0, 'neutral',
         'Ponder'
     ),
 
     (
-        'b2', 'human', 250, 0, 'lawful',
+        'b2', 'human', 2500, 0, 'lawful',
         'Find the engine manual'
     ),
     (
-        'b2', 'space_wizard', 150, 0, 'lawful',
+        'b2', 'space_wizard', 1250, 0, 'lawful',
         'Find your emergency scroll'
     ),
 
     (
-        'b2', 'astral_thief', 150, 0, 'chaotic',
+        'b2', 'astral_thief', 1250, 0, 'chaotic',
         'Play your guitar'
     ),
 
     (
-        'b2', 'cosmic_warrior', 150, 0, 'neutral',
+        'b2', 'cosmic_warrior', 1250, 0, 'neutral',
         '"THINK?"'
     ),
 
     (
-        'b2', 'default', 100, 0, 'neutral',
+        'b2', 'default', 1000, 0, 'neutral',
         'Humor the thought and move on'
     ),
 
     (
-        'b2', 'default', 100, 0, 'lawful',
+        'b2', 'default', 1000, 0, 'lawful',
         'Search for a toolbox'
     ),
     (
-        'b3', 'goblin', 250, 0, 'chaotic',
+        'b3', 'goblin', 2500, 0, 'chaotic',
         'Spit and stab the engine to cool it.'
     ),
 
     (
-        'b3', 'alien', 250, 0, 'lawful',
+        'b3', 'alien', 2500, 0, 'lawful',
         'Use your mind control to repair the engine'
     ),
 
     (
-        'b3', 'human', 250, 0, 'neutral',
+        'b3', 'human', 2500, 0, 'neutral',
         'Give into the panic'
     ),
     (
-        'b3', 'space_wizard', 150, 0, 'lawful',
+        'b3', 'space_wizard', 1250, 0, 'lawful',
         'Cast a cooling spell and begin repairs'
     ),
 
     (
-        'b3', 'astral_thief', 150, 0, 'neutral',
+        'b3', 'astral_thief', 1250, 0, 'neutral',
         ' Use your star dagger to repair the engine'
     ),
 
     (
-        'b3', 'cosmic_warrior', 150, 0, 'chaotic',
+        'b3', 'cosmic_warrior', 1250, 0, 'chaotic',
         'PUNCH EVERYTHING'
     ),
 
     (
-        'b3', 'default', 100, 0, 'neutral',
+        'b3', 'default', 1000, 0, 'neutral',
         'Do nothing'
     ),
 
     (
-        'b3', 'default', 100, 0, 'lawful',
+        'b3', 'default', 1000, 0, 'lawful',
         'Repair the parts from your observation'
     ),
     (
-        'b4', 'goblin', 250, 0, 'chaotic',
+        'b4', 'goblin', 2500, 0, 'chaotic',
         'Show them how goblins dance'
     ),
 
     (
-        'b4', 'alien', 250, 0, 'lawful',
+        'b4', 'alien', 2500, 0, 'lawful',
         'Glare at them'
     ),
 
     (
-        'b4', 'human', 250, 0, 'neutral',
+        'b4', 'human', 2500, 0, 'neutral',
         'Offer them your open hand'
     ),
     (
-        'b4', 'space_wizard', 150, 0, 'lawful',
+        'b4', 'space_wizard', 1250, 0, 'lawful',
         ' Cast the cretins to the next dimension'
     ),
 
     (
-        'b4', 'astral_thief', 150, 0, 'lawful',
+        'b4', 'astral_thief', 1250, 0, 'lawful',
         'Threaten them with your dagger'
     ),
 
     (
-        'b4', 'cosmic_warrior', 150, 0, 'chaotic',
+        'b4', 'cosmic_warrior', 1250, 0, 'chaotic',
         '"PARTY TIME"'
     ),
 
     (
-        'b4', 'default', 100, 0, 'neutral',
+        'b4', 'default', 1000, 0, 'neutral',
         'Coexists with them'
     ),
 
     (
-        'b4', 'default', 100, 0, 'lawful',
+        'b4', 'default', 1000, 0, 'lawful',
         'Kick them out'
     ),
     (
-        'c1', 'goblin', 250, 0, 'chaotic',
+        'c1', 'goblin', 2500, 0, 'chaotic',
         ' *rashberry noises* “Yooba-Dooba-Dooba”'
     ),
 
     (
-        'c1', 'alien', 250, 0, 'lawful',
+        'c1', 'alien', 2500, 0, 'lawful',
         'Agree to help this human'
     ),
 
     (
-        'c1', 'human', 250, 0, 'neutral',
+        'c1', 'human', 2500, 0, 'neutral',
         '“Ok..I guess.”'
     ),
     (
-        'c1', 'space_wizard', 150, 0, 'chaotic',
+        'c1', 'space_wizard', 1250, 0, 'chaotic',
         '"I don’t deal with criminals."'
     ),
 
     (
-        'c1', 'astral_thief', 150, 0, 'neutral',
+        'c1', 'astral_thief', 1250, 0, 'neutral',
         '"Outlaws should stick together."'
     ),
 
     (
-        'c1', 'cosmic_warrior', 150, 0, 'neutral',
+        'c1', 'cosmic_warrior', 1250, 0, 'neutral',
         '"YOU STRONG ME HELP."'
     ),
 
     (
-        'c1', 'default', 100, 0, 'neutral',
+        'c1', 'default', 1000, 0, 'neutral',
         'Reluctantly agree'
     ),
 
     (
-        'c1', 'default', 100, 0, 'chaotic',
+        'c1', 'default', 1000, 0, 'chaotic',
         'Decline his demands'
     ),
     (
-        'c2', 'goblin', 250, 0, 'chaotic',
+        'c2', 'goblin', 2500, 0, 'chaotic',
         'Press the shiniest button'
     ),
 
     (
-        'c2', 'alien', 250, 0, 'lawful',
+        'c2', 'alien', 2500, 0, 'lawful',
         'Use telekinesis to press all of the buttons'
     ),
 
     (
-        'c2', 'human', 250, 0, 'chaotic',
+        'c2', 'human', 2500, 0, 'chaotic',
         'Press your favorite colored button'
     ),
     (
-        'c2', 'space_wizard', 150, 0, 'lawful',
+        'c2', 'space_wizard', 1250, 0, 'lawful',
         'Cast a spell to choose a button for you.'
     ),
 
     (
-        'c2', 'astral_thief', 150, 0, 'neutral',
+        'c2', 'astral_thief', 1250, 0, 'neutral',
         'Close your eyes and toss your dagger at the panel'
     ),
 
     (
-        'c2', 'cosmic_warrior', 150, 0, 'neutral',
+        'c2', 'cosmic_warrior', 1250, 0, 'neutral',
         'Hurl your axe at the panel'
     ),
 
     (
-        'c2', 'default', 100, 0, 'neutral',
+        'c2', 'default', 1000, 0, 'neutral',
         'Press the blue button'
     ),
 
     (
-        'c2', 'default', 100, 0, 'lawful',
+        'c2', 'default', 1000, 0, 'lawful',
         'Press the red button'
     ),
     (
-        'c3', 'goblin', 250, 0, 'chaotic',
+        'c3', 'goblin', 2500, 0, 'chaotic',
         'Jump down to surprise him'
     ),
 
     (
-        'c3', 'alien', 250, 0, 'lawful',
+        'c3', 'alien', 2500, 0, 'lawful',
         'Speak to him with mind control.'
     ),
 
     (
-        'c3', 'human', 250, 0, 'neutral',
+        'c3', 'human', 2500, 0, 'neutral',
         'Play it safe and call to him from the vent'
     ),
     (
-        'c3', 'space_wizard', 150, 0, 'lawful',
+        'c3', 'space_wizard', 1250, 0, 'lawful',
         'Cast a projection of yourself in front of him.'
     ),
 
     (
-        'c3', 'astral_thief', 150, 0, 'neutral',
+        'c3', 'astral_thief', 1250, 0, 'neutral',
         'Remain unseen and talk to him from the vent'
     ),
 
     (
-        'c3', 'cosmic_warrior', 150, 0, 'chaotic',
+        'c3', 'cosmic_warrior', 1250, 0, 'chaotic',
         'Greet your fellow warrior like a man'
     ),
 
     (
-        'c3', 'default', 100, 0, 'neutral',
+        'c3', 'default', 1000, 0, 'neutral',
         'Call to him from the vent'
     ),
 
     (
-        'c3', 'default', 100, 0, 'chaotic',
+        'c3', 'default', 1000, 0, 'chaotic',
         'Introduce yourself'
     ),
     (
-        'c4', 'goblin', 250, 0, 'chaotic',
+        'c4', 'goblin', 2500, 0, 'chaotic',
         ' “Run fast, hooman.”'
     ),
 
     (
-        'c4', 'alien', 250, 0, 'neutral',
+        'c4', 'alien', 2500, 0, 'neutral',
         '“Let’s be smart about this, call the guard human.”'
     ),
 
     (
-        'c4', 'human', 250, 0, 'lawful',
+        'c4', 'human', 2500, 0, 'lawful',
         '“Let’s go the way I came”'
     ),
     (
-        'c4', 'space_wizard', 150, 0, 'neutral',
+        'c4', 'space_wizard', 1250, 0, 'neutral',
         'Cast a spell to trick the guard.'
     ),
 
     (
-        'c4', 'astral_thief', 150, 0, 'lawful',
+        'c4', 'astral_thief', 1250, 0, 'lawful',
         'Stay in the shadows, move through the vents.'
     ),
 
     (
-        'c4', 'cosmic_warrior', 150, 0, 'chaotic',
+        'c4', 'cosmic_warrior', 1250, 0, 'chaotic',
         'Break the glass cell and rush out.'
     ),
 
     (
-        'c4', 'default', 100, 0, 'neutral',
+        'c4', 'default', 1000, 0, 'neutral',
         'Tell the prisoner to call the guard'
     ),
 
     (
-        'c4', 'default', 100, 0, 'lawful',
+        'c4', 'default', 1000, 0, 'lawful',
         'Use the vents towards the yard'
     ),
     (
-        'c5', 'goblin', 250, 0, 'chaotic',
+        'c5', 'goblin', 2500, 0, 'chaotic',
         '“Gwarspeh”'
     ),
 
     (
-        'c5', 'alien', 250, 0, 'neutral',
+        'c5', 'alien', 2500, 0, 'neutral',
         'Read the prisoners mind for his name'
     ),
 
     (
-        'c5', 'human', 250, 0, 'lawful',
+        'c5', 'human', 2500, 0, 'lawful',
         '*laugh nervously* “Aren’t all prisoners the same?”'
     ),
     (
-        'c5', 'space_wizard', 150, 0, 'neutral',
+        'c5', 'space_wizard', 1250, 0, 'neutral',
         '*wave your hand* “We are not the ones you’re looking for”'
     ),
 
     (
-        'c5', 'astral_thief', 150, 0, 'lawful',
+        'c5', 'astral_thief', 1250, 0, 'lawful',
         'Persuade the guard'
     ),
 
     (
-        'c5', 'cosmic_warrior', 150, 0, 'chaotic',
+        'c5', 'cosmic_warrior', 1250, 0, 'chaotic',
         'Yell nonsense'
     ),
 
     (
-        'c5', 'default', 100, 0, 'neutral',
+        'c5', 'default', 1000, 0, 'neutral',
         'Joey'
     ),
 
     (
-        'c5', 'default', 100, 0, 'lawful',
+        'c5', 'default', 1000, 0, 'lawful',
         'Joseph'
     ),
     (
@@ -471,65 +471,65 @@ VALUES
         '“A chance to go back to Earth Captain”'
     ),
     (
-        'c6', 'space_wizard', 150, 0, 'neutral',
+        'c6', 'space_wizard', 1250, 0, 'neutral',
         '“Spells, baubles, nicknacks of the sort”'
     ),
 
     (
-        'c6', 'astral_thief', 150, 0, 'neutral',
+        'c6', 'astral_thief', 1250, 0, 'neutral',
         '"A new dagger would be nice, then I’ll call it even"'
     ),
 
     (
-        'c6', 'cosmic_warrior', 150, 0, 'neutral',
+        'c6', 'cosmic_warrior', 1250, 0, 'neutral',
         '"ME? AXE STRONG SHINY"'
     ),
 
     (
-        'c6', 'default', 100, 0, 'neutral',
+        'c6', 'default', 1000, 0, 'neutral',
         '“A new ship?”'
     ),
 
     (
-        'c6', 'default', 100, 0, 'chaotic',
+        'c6', 'default', 1000, 0, 'chaotic',
         '“I don’t take handouts”'
     ),
     (
-        'd1', 'goblin', 250, 0, 'chaotic',
+        'd1', 'goblin', 2500, 0, 'chaotic',
         '“Play Gwar Gwar beats”'
     ),
 
     (
-        'd1', 'alien', 250, 0, 'chaotic',
+        'd1', 'alien', 2500, 0, 'chaotic',
         '“Play Outerstellar music”'
     ),
 
     (
-        'd1', 'human', 250, 0, 'lawful',
+        'd1', 'human', 2500, 0, 'lawful',
         '"Play Rocking the Game”'
     ),
     (
-        'd1', 'space_wizard', 150, 0, 'lawful',
+        'd1', 'space_wizard', 1250, 0, 'lawful',
         '"Play Dropping Spells and Taking Names"'
     ),
 
     (
-        'd1', 'astral_thief', 150, 0, 'neutral',
+        'd1', 'astral_thief', 1250, 0, 'neutral',
         '“Play A Dance of Daggers”'
     ),
 
     (
-        'd1', 'cosmic_warrior', 150, 0, 'chaotic',
+        'd1', 'cosmic_warrior', 1250, 0, 'chaotic',
         '“PLAY AXE ME A QUESTION”'
     ),
 
     (
-        'd1', 'default', 100, 0, 'neutral',
+        'd1', 'default', 1000, 0, 'neutral',
         'Play Space is Cool'
     ),
 
     (
-        'd1', 'default', 100, 0, 'lawful',
+        'd1', 'default', 1000, 0, 'lawful',
         'Play Video Game Land'
     );
     
@@ -551,7 +551,7 @@ VALUES
     ('b3', 'lawful', 'As you gracefully repair the engine you notice it starts to ease up and cool down to its normal hum.\n\n”Captain, we’re alive!”\nYou laugh at B.O.B.B.Y.’s remark,\ncomputers should have no concept of what it means to be “Alive,”\nYou head back to ask B.O.B.B.Y about the Manuels.', false),
     ('b4', 'chaotic', 'You decide to party with your new friends in celebration of staying alive today.\n…\n…\n…\nOnce the party died down you went straight to your quarters.\nThe thought of what caused the damage never crossed your mind again.', false),
     ('b4', 'neutral', 'You decide to coexist with the Manuels, \ngiven how they seem like good people at least from looks.\n“Thank you Captain, you won’t regret this.”\n...\nYou gather your best space food tubes and share them with your new friends before heading to bed to contemplate today’s events.', false),
-    ('b4', 'lawful', '\nThe Manuels can clearly sense your intentions and decide to leave the ship before the situation escalates.\nIs B.O.B.B.Y. deflecting and vouching for a group of stowaways on your ship\n\n…\n\n Having not found the cause of the damage on the ship you decide it probably best to not trust these small strangers.\n\n”Captain, I...”\nYou ignore B.O.B.B.Y. and head to your quarters to turn in for the day.', false),
+    ('b4', 'lawful', '\nThe Manuels can clearly sense your intentions and decide to leave the ship before the situation escalates.\nIs B.O.B.B.Y. deflecting and vouching for a group of stowaways on your ship?\n\n…\n\n Having not found the cause of the damage on the ship you decide it probably best to not trust these small strangers.\n\n”Captain, I...”\nYou ignore B.O.B.B.Y. and head to your quarters to turn in for the day.', false),
     ('c1', 'chaotic', 'Captain Harlock stares at his telecom in disgust.\n…\n...\n“Well it was nice talking to you, Captain”\nCaptain Barlock fires his gauss cannon towards the ship.\n…\nThe ship ruptures from the force of the impact and explodes before you could even finish the words…\n\n oops.', true),
     ('c1', 'neutral', 'Given the situation you decide it would be best to comply with Barlock\nWho knows maybe there’s an award in it for you!\n…\nUpon arrival at the prison,  B.O.B.B.Y. gives you his thoughts.\n”Captain, when you enter the prison the best possible route inside\nwill be the garbage chute and whatever you do.\nDO NOT PRESS THE RED BUTTON” You enter the inconspicuous hole in the side of the prison and slide down the chute.', false),
     ('c1', 'lawful', 'After considering the pros and cons, you decide to help this outlaw even though \nit goes against the very morales of your character.\n…\n“Captain, we’re approaching the Prison. You sh-”\n Upon a quick glance at the prison as it came into view you notice a weird inconspicuous hole in the side of the prison.\nYour hurt pride causes you to lose focus and before B.O.B.B.Y. couldn’t finish his sentence,\nyou strap on your space gear and enter the convenient entrance and slide down a chute.', false),
