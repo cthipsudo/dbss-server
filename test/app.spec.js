@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+/* eslint-disable strict */
 const app = require('../src/app');
 
 describe('App', () => {

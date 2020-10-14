@@ -20,13 +20,6 @@ VALUES
   ('brooklyn', '$2a$12$WuHLfqdQJ.61Ay1Q4yqdrOLaDHDU7l/pDjBby3q.kBVH1bpKSMGsa'),
   ('ninenine', '$2a$12$784WvwVBHrb39GMyJxM.Zebg1i8.tmrvUBZ.EALszMrsDFEs0L5EG');
 
---   ('dunder', 'apple'),
---   ('park', 'banana'),
---   ('recs', 'pear'),
---   ('midslotgone', 'orange'),
---   ('brooklyn', 'watermelon'),
---   ('ninenine', 'peach');
-
 INSERT INTO
     dbss_classes (class_name)
 VALUES
