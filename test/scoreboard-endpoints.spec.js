@@ -46,6 +46,11 @@ describe('Scoreboard Endpoints', function () {
                     .get(`/api/scoreboard`)
                     .expect(200);
             });
+            it('responds with 200 and recent scores', () => {
+                return supertest(app)
+                    .get(`/api/scoreboard/recent`)
+                    .expect(200);
+            });
         });
     });
 
