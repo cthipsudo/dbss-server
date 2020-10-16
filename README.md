@@ -74,7 +74,7 @@ Curious about setting up the game for you own personal use?
 #### Parameters 
 **playerid** | The id of the player. | **Example:** 2 | **Integer**
 #### Headers:
-Content-Type:application/json
+Content-Type: application/json
 
 Authorization: Bearer "JWT HERE"
 
@@ -122,7 +122,7 @@ Authorization: Bearer "JWT HERE"
 **playerid** | The id of the player. | **Example:** 2 | **Integer**
 **slotnum** | The number of the slot of the character. | **Example:** 2 | **Fixed Integer** of either **1, 2, or 3**
 #### Headers:
-Content-Type:application/json
+Content-Type: application/json
 
 Authorization: Bearer "JWT HERE"
 #### Body: 
@@ -152,7 +152,7 @@ Authorization: Bearer "JWT HERE"
 **playerid** | The id of the player. | **Example:** 2 | **Integer**
 **slotnum** | The number of the slot of the character. | **Example:** 2 | **Fixed Integer** of either **1, 2, or 3**
 #### Headers:
-Content-Type:application/json
+Content-Type: application/json
 
 Authorization: Bearer "JWT HERE"
 #### Body: 
@@ -200,7 +200,7 @@ Authorization: Bearer "JWT HERE"
 
 #### POST `http://localhost:8000/api/scoreboard`
 #### Headers:
-Content-Type:application/json
+Content-Type: application/json
 
 Authorization: Bearer "Client Game Token Here"
 #### Body: 
