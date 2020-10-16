@@ -23,9 +23,9 @@ Curious about setting up the game for you own personal use?
 
 ### Questions
 #### GET `http://localhost:8000/api/questions`
-#### RESPONSE 200
-#### Headers Content-Type:application/json
-#### Body 
+#### RESPONSE: 200
+#### Headers: Content-Type:application/json
+#### Body: 
 ```
 [ 
     {
@@ -35,6 +35,25 @@ Curious about setting up the game for you own personal use?
     }
 ]
 ```
+### Choices
+#### GET `http://localhost:8000/api/choices`
+#### RESPONSE: 200
+#### Headers: Content-Type:application/json
+#### Body: 
+```
+[ 
+    {
+        "id": 1,
+        "linkedTo": "a1",
+        "choiceType": "goblin",
+        "choice": "*recites your name in gobish*",
+        "alignment": "chaotic",
+        "score": 2500,
+        "health_lost": 0
+    }
+]
+```
+
 ## About Me
 [Github](https://github.com/cthipsudo)
 
