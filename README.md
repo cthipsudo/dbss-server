@@ -106,6 +106,7 @@ Authorization: Bearer "JWT HERE"
     }
 ]
 ```
+---
 #### DELETE `http://localhost:8000/api/char-save/:playerid/:slotnum`
 ##### Parameters 
 **playerid** | The id of the player. | **Example:** 2 | **Integer**
@@ -116,7 +117,7 @@ Content-Type:application/json
 Authorization: Bearer "JWT HERE"
 
 ##### RESPONSE: 204 No Content
-
+---
 #### POST `http://localhost:8000/api/char-save/:playerid/slot-num:slotnum`
 ##### Parameters 
 **playerid** | The id of the player. | **Example:** 2 | **Integer**
@@ -147,6 +148,7 @@ Authorization: Bearer "JWT HERE"
     "char_race": 2
 }
 ```
+---
 #### PATCH `http://localhost:8000/api/char-save/:playerid/slot-num:slotnum`
 ##### Parameters 
 **playerid** | The id of the player. | **Example:** 2 | **Integer**
@@ -197,7 +199,7 @@ Authorization: Bearer "JWT HERE"
     }
 ]
 ```
-
+---
 #### POST `http://localhost:8000/api/scoreboard`
 ##### Headers:
 Content-Type: application/json
