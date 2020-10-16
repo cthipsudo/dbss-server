@@ -72,7 +72,7 @@ Curious about setting up the game for you own personal use?
 ### Character Saves
 #### GET `http://localhost:8000/api/char-save/:playerid`
 #### Parameters 
-**playerid** | id of the player **Example:** 2 | **Integer**
+**playerid** | The id of the player. | **Example:** 2 | **Integer**
 #### Headers:
 Content-Type:application/json
 Authorization: Bearer "JWT HERE"
@@ -105,7 +105,118 @@ Authorization: Bearer "JWT HERE"
     }
 ]
 ```
+#### DELETE `http://localhost:8000/api/char-save/:playerid/:slotnum`
+#### Parameters 
+**playerid** | The id of the player. | **Example:** 2 | **Integer**
+**slotnum** | The number of the slot of the character. | **Example:** 2 | **Fixed Integer** of either **1, 2, or 3**
+#### Headers:
+Content-Type:application/json
+Authorization: Bearer "JWT HERE"
 
+#### RESPONSE: 204 No Content
+
+#### POST `http://localhost:8000/api/char-save/:playerid/slot-num:slotnum`
+#### Parameters 
+**playerid** | The id of the player. | **Example:** 2 | **Integer**
+**slotnum** | The number of the slot of the character. | **Example:** 2 | **Fixed Integer** of either **1, 2, or 3**
+#### Headers:
+Content-Type:application/json
+Authorization: Bearer "JWT HERE"
+#### Body: 
+```
+{
+    "char_name": "Millie",
+    "char_class": 2,
+    "char_race": 2
+}
+```
+
+#### RESPONSE: 201 Created
+#### Headers: Content-Type:application/json
+#### Body: 
+```
+{
+    "id": 15,
+    "user_id": 1,
+    "slot_num": 3,
+    "char_name": "Millie",
+    "char_class": 2,
+    "char_race": 2
+}
+```
+#### PATCH `http://localhost:8000/api/char-save/:playerid/slot-num:slotnum`
+#### Parameters 
+**playerid** | The id of the player. | **Example:** 2 | **Integer**
+**slotnum** | The number of the slot of the character. | **Example:** 2 | **Fixed Integer** of either **1, 2, or 3**
+#### Headers:
+Content-Type:application/json
+Authorization: Bearer "JWT HERE"
+#### Body: 
+```
+{
+    "char_name": "Millie",
+    "char_class": 2,
+    "char_race": 2
+}
+```
+
+#### RESPONSE: 200 Ok
+#### Headers: Content-Type:application/json
+#### Body: 
+```
+{
+    "message": "char updated"
+}
+```
+
+### Scoreboard
+#### GET `http://localhost:8000/api/scoreboard/:filter`
+#### Parameters 
+**filter** | Scoreboard Filter for either **Top** or **Recent** scores. | **Example:** Recent | **String**
+
+#### RESPONSE: 200
+#### Headers: Content-Type:application/json
+#### Body: 
+```
+[ 
+    {
+        "id": 2,
+        "nick_name": "TES",
+        "score": 17250,
+        "date_created": "2020-10-15T22:49:55.943Z"
+    },
+    {
+        "id": 1,
+        "nick_name": "Ouo",
+        "score": 14150,
+        "date_created": "2020-10-15T21:44:48.841Z"
+    }
+]
+```
+
+#### POST `http://localhost:8000/api/scoreboard`
+#### Headers:
+Content-Type:application/json
+Authorization: Bearer "Client Game Token Here"
+#### Body: 
+```
+{
+    "nick_name": "APR",
+    "score": 4560
+}
+```
+
+#### RESPONSE: 201 Created
+#### Headers: Content-Type:application/json
+#### Body: 
+```
+{
+    "id": 3,
+    "nick_name": "APR",
+    "score": 666,
+    "date_created": "2020-10-16T19:16:43.870Z"
+}
+```
 ## About Me
 [Github](https://github.com/cthipsudo)
 
