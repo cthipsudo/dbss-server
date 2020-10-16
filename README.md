@@ -75,6 +75,7 @@ Curious about setting up the game for you own personal use?
 **playerid** | The id of the player. | **Example:** 2 | **Integer**
 #### Headers:
 Content-Type:application/json
+
 Authorization: Bearer "JWT HERE"
 
 #### RESPONSE: 200
@@ -111,6 +112,7 @@ Authorization: Bearer "JWT HERE"
 **slotnum** | The number of the slot of the character. | **Example:** 2 | **Fixed Integer** of either **1, 2, or 3**
 #### Headers:
 Content-Type:application/json
+
 Authorization: Bearer "JWT HERE"
 
 #### RESPONSE: 204 No Content
@@ -121,6 +123,7 @@ Authorization: Bearer "JWT HERE"
 **slotnum** | The number of the slot of the character. | **Example:** 2 | **Fixed Integer** of either **1, 2, or 3**
 #### Headers:
 Content-Type:application/json
+
 Authorization: Bearer "JWT HERE"
 #### Body: 
 ```
@@ -150,6 +153,7 @@ Authorization: Bearer "JWT HERE"
 **slotnum** | The number of the slot of the character. | **Example:** 2 | **Fixed Integer** of either **1, 2, or 3**
 #### Headers:
 Content-Type:application/json
+
 Authorization: Bearer "JWT HERE"
 #### Body: 
 ```
@@ -197,6 +201,7 @@ Authorization: Bearer "JWT HERE"
 #### POST `http://localhost:8000/api/scoreboard`
 #### Headers:
 Content-Type:application/json
+
 Authorization: Bearer "Client Game Token Here"
 #### Body: 
 ```
