@@ -23,9 +23,9 @@ Curious about setting up the game for you own personal use?
 
 ### Questions
 #### GET `http://localhost:8000/api/questions`
-#### RESPONSE: 200
-#### Headers: Content-Type:application/json
-#### Body: 
+##### RESPONSE: 200
+##### Headers: Content-Type:application/json
+##### Body: 
 ```
 [ 
     {
@@ -37,9 +37,9 @@ Curious about setting up the game for you own personal use?
 ```
 ### Choices
 #### GET `http://localhost:8000/api/choices`
-#### RESPONSE: 200
-#### Headers: Content-Type:application/json
-#### Body: 
+##### RESPONSE: 200
+##### Headers: Content-Type:application/json
+##### Body: 
 ```
 [ 
     {
@@ -55,9 +55,9 @@ Curious about setting up the game for you own personal use?
 ```
 ### Responses
 #### GET `http://localhost:8000/api/responses`
-#### RESPONSE: 200
-#### Headers: Content-Type:application/json
-#### Body: 
+##### RESPONSE: 200
+##### Headers: Content-Type:application/json
+##### Body: 
 ```
 [ 
     {
@@ -71,16 +71,16 @@ Curious about setting up the game for you own personal use?
 ```
 ### Character Saves
 #### GET `http://localhost:8000/api/char-save/:playerid`
-#### Parameters 
+##### Parameters 
 **playerid** | The id of the player. | **Example:** 2 | **Integer**
-#### Headers:
+##### Headers:
 Content-Type: application/json
 
 Authorization: Bearer "JWT HERE"
 
-#### RESPONSE: 200
-#### Headers: Content-Type:application/json
-#### Body: 
+##### RESPONSE: 200
+##### Headers: Content-Type:application/json
+##### Body: 
 ```
 [ 
     {
@@ -107,25 +107,25 @@ Authorization: Bearer "JWT HERE"
 ]
 ```
 #### DELETE `http://localhost:8000/api/char-save/:playerid/:slotnum`
-#### Parameters 
+##### Parameters 
 **playerid** | The id of the player. | **Example:** 2 | **Integer**
 **slotnum** | The number of the slot of the character. | **Example:** 2 | **Fixed Integer** of either **1, 2, or 3**
-#### Headers:
+##### Headers:
 Content-Type:application/json
 
 Authorization: Bearer "JWT HERE"
 
-#### RESPONSE: 204 No Content
+##### RESPONSE: 204 No Content
 
 #### POST `http://localhost:8000/api/char-save/:playerid/slot-num:slotnum`
-#### Parameters 
+##### Parameters 
 **playerid** | The id of the player. | **Example:** 2 | **Integer**
 **slotnum** | The number of the slot of the character. | **Example:** 2 | **Fixed Integer** of either **1, 2, or 3**
-#### Headers:
+##### Headers:
 Content-Type: application/json
 
 Authorization: Bearer "JWT HERE"
-#### Body: 
+##### Body: 
 ```
 {
     "char_name": "Millie",
@@ -134,9 +134,9 @@ Authorization: Bearer "JWT HERE"
 }
 ```
 
-#### RESPONSE: 201 Created
-#### Headers: Content-Type:application/json
-#### Body: 
+##### RESPONSE: 201 Created
+##### Headers: Content-Type:application/json
+##### Body: 
 ```
 {
     "id": 15,
@@ -148,14 +148,14 @@ Authorization: Bearer "JWT HERE"
 }
 ```
 #### PATCH `http://localhost:8000/api/char-save/:playerid/slot-num:slotnum`
-#### Parameters 
+##### Parameters 
 **playerid** | The id of the player. | **Example:** 2 | **Integer**
 **slotnum** | The number of the slot of the character. | **Example:** 2 | **Fixed Integer** of either **1, 2, or 3**
-#### Headers:
+##### Headers:
 Content-Type: application/json
 
 Authorization: Bearer "JWT HERE"
-#### Body: 
+##### Body: 
 ```
 {
     "char_name": "Millie",
@@ -164,9 +164,9 @@ Authorization: Bearer "JWT HERE"
 }
 ```
 
-#### RESPONSE: 200 Ok
-#### Headers: Content-Type:application/json
-#### Body: 
+##### RESPONSE: 200 Ok
+##### Headers: Content-Type:application/json
+##### Body: 
 ```
 {
     "message": "char updated"
@@ -175,12 +175,12 @@ Authorization: Bearer "JWT HERE"
 
 ### Scoreboard
 #### GET `http://localhost:8000/api/scoreboard/:filter`
-#### Parameters 
+##### Parameters 
 **filter** | Scoreboard Filter for either **Top** or **Recent** scores. | **Example:** Recent | **String**
 
-#### RESPONSE: 200
-#### Headers: Content-Type:application/json
-#### Body: 
+##### RESPONSE: 200
+##### Headers: Content-Type:application/json
+##### Body: 
 ```
 [ 
     {
@@ -199,11 +199,11 @@ Authorization: Bearer "JWT HERE"
 ```
 
 #### POST `http://localhost:8000/api/scoreboard`
-#### Headers:
+##### Headers:
 Content-Type: application/json
 
 Authorization: Bearer "Client Game Token Here"
-#### Body: 
+##### Body: 
 ```
 {
     "nick_name": "APR",
@@ -211,9 +211,9 @@ Authorization: Bearer "Client Game Token Here"
 }
 ```
 
-#### RESPONSE: 201 Created
-#### Headers: Content-Type:application/json
-#### Body: 
+##### RESPONSE: 201 Created
+##### Headers: Content-Type:application/json
+##### Body: 
 ```
 {
     "id": 3,
