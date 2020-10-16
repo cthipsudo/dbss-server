@@ -26,13 +26,11 @@ Curious about setting up the game for you own personal use?
 #### RESPONSE 200
 #### Headers Content-Type:application/json
 #### Body `[ 
-[
     {
         "id": "a1",
         "linkedTo": "a",
         "question": "Hello {name}, I am your Buddy On Board Briefing Yokemate,\\nB.O.B.B.Y. for short.\\n\\nWelcome to Drifting Between Silence and Stardust, a bite-sized interactive choose-your-own-adventure-game.\\nLet's get you up to speed with how the game works.\\nTell me Captain, who are you?"
     }
-]
 ]`
 ## About Me
 [Github](https://github.com/cthipsudo)
