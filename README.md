@@ -72,7 +72,7 @@ Curious about setting up the game for you own personal use?
 ### Character Saves
 #### GET `http://localhost:8000/api/char-save/:playerid`
 #### Parameters 
-playerid | id of the player Example: 1 | Integer
+**playerid** | id of the player **Example:** 2 | **Integer**
 #### Headers:
 Content-Type:application/json
 Authorization: Bearer "JWT HERE"
