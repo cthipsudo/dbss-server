@@ -14,10 +14,10 @@ Curious about setting up the game for you own personal use?
 1. create a .env file with two variables, a token that matches the server token and a endpoint address that points to your local server address.
       1. `REACT_APP_GAME_TOKEN="any token here"`
       1. `REACT_APP_API_ENDPOINT="http://somelocalhost:1337/api"`
-1. run the following commands to start the server, start the server with nodemon, and to run test..
-  1. `npm start`
-  1. `npm run dev`
-  1. `npm test`
+1. run the following commands to start the server, start the server with nodemon, and to run test.
+      1. `npm start`
+      1. `npm run dev`
+      1. `npm test`
 
 ## Endpoints
 
