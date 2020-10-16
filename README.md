@@ -1,26 +1,34 @@
-# Express Boilerplate!
+# Drifting between Silence and Stardust version 1.0 [Client](https://github.com/cthipsudo/dbss-app-client) | [Server](https://github.com/cthipsudo/dbss-server)
+Drifting Between Silence and Startdust is a "Choose-your-own-Adventure" game that features character creation, randomly shuffled encounters and character specific choices for each encounter based on a selected character's traits. Winners of the game are given the option to add their initals to the scoreboard, which can by filtered by Recent or Top scores.
 
-This is a boilerplate project used for starting new projects!
+This Server was built using ExpressJs to interact with a Postgresql Database.
 
-## Set up
+# [Play now!](https://dbss-client.vercel.app/)
+This front-end client was built with using **ReactJS**, **HTML**, and **CSS**.
 
-Complete the following steps to start a new project (NEW-PROJECT-NAME):
+## Set up (for local use)
+Curious about setting up the game for you own personal use?
+1. clone this client to a directory
+1. run `npm install` to ensure all dependencies are installed.
+1. download and run the dbss server and follow it's instructions
+1. create a .env file with two variables, a token that matches the server token and a endpoint address that points to your local server address.
+      1. `REACT_APP_GAME_TOKEN="any token here"`
+      1. `REACT_APP_API_ENDPOINT="http://somelocalhost:1337/api"`
+1. run the following commands to start the server, start the server with nodemon, and to run test..
+  1. `npm start`
+  1. `npm run dev`
+  1. `npm test`
 
-1. Clone this repository to your local machine `git clone BOILERPLATE-URL NEW-PROJECTS-NAME`
-2. `cd` into the cloned repository
-3. Make a fresh start of the git history for this project with `rm -rf .git && git init`
-4. Install the node dependencies `npm install`
-5. Move the example Environment file to `.env` that will be ignored by git and read by the express server `mv example.env .env`
-6. Edit the contents of the `package.json` to use NEW-PROJECT-NAME instead of `"name": "express-boilerplate",`
+## Endpoints
 
-## Scripts
+## About Me
+[Github](https://github.com/cthipsudo)
 
-Start the application `npm start`
+[LinkedIn](https://www.linkedin.com/in/chanpasong-thipphakhinkeo/)
 
-Start nodemon for the application `npm run dev`
+[My Other Projects](https://oscarthipp.com/)
 
-Run the tests `npm test`
-
-## Deploying
-
-When your new project is ready for deployment, add a new Heroku application with `heroku create`. This will make a new git remote called "heroku" and you can then `npm run deploy` which will push to this remote's master branch.
+## Server Features coming soon
+1. Enum Choice type to be refactored into its own table. 
+1. Bosses Table
+2. Choice, Response, and Question Tables revamp. 
