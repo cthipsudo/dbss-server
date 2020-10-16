@@ -1,19 +1,20 @@
 # Drifting between Silence and Stardust version 1.0 [Client](https://github.com/cthipsudo/dbss-app-client) | [Server](https://github.com/cthipsudo/dbss-server)
 Drifting Between Silence and Startdust is a "Choose-your-own-Adventure" game that features character creation, randomly shuffled encounters and character specific choices for each encounter based on a selected character's traits. Winners of the game are given the option to add their initals to the scoreboard, which can by filtered by Recent or Top scores.
 
-This Server was built using ExpressJs to interact with a Postgresql Database.
-
 # [Play now!](https://dbss-client.vercel.app/)
-This front-end client was built with using **ReactJS**, **HTML**, and **CSS**.
+This back-end server was built with using **ExpressJS**, **NodeJs**, and **Postgresql**.
 
 ## Set up (for local use)
 Curious about setting up the game for you own personal use?
-1. clone this client to a directory
+1. clone this server to a directory
 1. run `npm install` to ensure all dependencies are installed.
-1. download and run the dbss server and follow it's instructions
-1. create a .env file with two variables, a token that matches the server token and a endpoint address that points to your local server address.
-      1. `REACT_APP_GAME_TOKEN="any token here"`
-      1. `REACT_APP_API_ENDPOINT="http://somelocalhost:1337/api"`
+1. create a dbss database on your machine
+1. create a .env file with 3 variables, a token that matches the client token, a JWT Secret, a database url that links to the local dbss database;
+      1. `DATABASE_URL="your local dbss address"`
+      1. `JWT_SECRET="some-secret-right"`
+      1. `API_TOKEN="Anything here and also matches the local client token."`
+1. run `npm migrate` to create all the tables for the dbss database;
+1. seed your database with the seed file provide. 
 1. run the following commands to start the server, start the server with nodemon, and to run test.
       1. `npm start`
       1. `npm run dev`
