@@ -53,6 +53,58 @@ Curious about setting up the game for you own personal use?
     }
 ]
 ```
+### Responses
+#### GET `http://localhost:8000/api/responses`
+#### RESPONSE: 200
+#### Headers: Content-Type:application/json
+#### Body: 
+```
+[ 
+    {
+        "id": 1,
+        "linkedTo": "a1",
+        "alignment": "chaotic",
+        "response": "Interesting…….uh….....response Captain.\\nFrom this point on, I will be your narrator and help “guide” your decisions through any predicaments you may encounter,\\nI may advise against some or even praise others.\\nRegardless, this is YOUR STORY. Don’t let me influence you, but keep in mind, this story is fairly linear, the only things that are truly unique are your choices and the responses. Maybe in the near future, my creator will rebuild this game engine to incorporate legitimate story pathing when he isn’t restricted by time constraints. \\n Enough of the “meta talk”, once you’re ready hit Continue to start the first day of your story.\\n\\n HINT: If I talk too slow for you, click on text to make me say everything at once!",
+        "game_ending": false
+    }
+]
+```
+### Character Saves
+#### GET `http://localhost:8000/api/char-save/:playerid`
+#### Parameters 
+playerid | id of the player Example: 1 | Integer
+#### Headers:
+Content-Type:application/json
+Authorization: Bearer "JWT HERE"
+
+#### RESPONSE: 200
+#### Headers: Content-Type:application/json
+#### Body: 
+```
+[ 
+    {
+        "user_id": 2,
+        "slot_num": 1,
+        "char_name": "Benji",
+        "class_name": "space_wizard",
+        "race_name": "human"
+    },
+    {
+        "user_id": 2,
+        "slot_num": 2,
+        "char_name": "Spore",
+        "class_name": "cosmic_warrior",
+        "race_name": "alien"
+    },
+    {
+        "user_id": 2,
+        "slot_num": 3,
+        "char_name": "Apple",
+        "class_name": "astral_thief",
+        "race_name": "goblin"
+    }
+]
+```
 
 ## About Me
 [Github](https://github.com/cthipsudo)
