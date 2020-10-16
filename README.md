@@ -23,9 +23,9 @@ Curious about setting up the game for you own personal use?
 
 ### Questions
 #### GET `http://localhost:8000/api/questions`
-RESPONSE 200
-Headers Content-Type:application/json
-Body `[ 
+#### RESPONSE 200
+#### Headers Content-Type:application/json
+#### Body `[ 
     {
         "id": "a1",
         "linkedTo": "a",
